@@ -195,3 +195,11 @@ const CARDS=[
 const SP={datuk:["👔","Datuk Hamdan Datang","'Mana mak cik tadi? Dia mengadu pasal anda.' Datuk merenung tajam.","Minta maaf, mengaku silap",[-15,10,0],"Pertahankan SOP",[-5,-15,2]]};
 const MODS=[["Hari Biasa","Tiada apa-apa. Setakat ini.",1,1],["Hari Gaji","Semua orang datang serentak!",1.3,1],["Hujan Lebat","Pelanggan basah & moody.",1.2,1.1],["Akhir Bulan","Semua nak renew sebelum tamat!",1.2,1.2],["Jumaat","Ramai nak balik awal solat Jumaat.",1,.9],["Cuti Sekolah","Budak lari-lari merata.",1.1,1.2]];
 const END={energy:["🤕","BURNOUT!","Anda pengsan di kaunter. Kak Sal tolong dukung ke klinik. Dapat MC 2 hari."],patience:["📹","VIRAL TIKTOK!","Video muka ketat anda tular: 'Gaji guna duit cukai kami tapi servis lambat!' Anda digantung kerja."],kpi:["📩","SURAT TUNJUK SEBAB","Jam 5.00 petang, sasaran tak tercapai. Surat tunjuk sebab menanti di meja."],sprm:["🚔","SPRM TERBAIK!","Sampul tadi rupanya perangkap. Anda ditahan reban di depan 200 orang. Tular juga."]};
+CARDS.push(
+["🤳","Selfie Pegawai","'Boleh saya post gambar kita kat Facebook?'","Senyum, boleh",[-5,10,1,null,"fb"],"Tolak sopan",[0,-10,0]],
+["✉️","Surat Aduan","'Saya dah tulis aduan pasal awak kepada Ketua Jabatan!'","Minta maaf dahulu",[-10,10,0],"Biar dia mengadu",[0,-10,0,null,"audit"]],
+["🍬","Kak Zah Pelanggan Tetap","Kak Zah datang lagi, cerita panjang pasal cucu dia.","Layan dengan ramah",[-10,15,1,null,"kuih"],"Potong cerita",[0,-10,0]]);
+Object.assign(SP,{
+fb:["👍","Gambar Tular","Gambar anda tular: 'Pegawai paling ramah!' Orang ramai kini mahu jumpa anda.","Layan semua sabar",[-25,25,2],"'Satu-satu ya'",[-10,0,1]],
+audit:["🕵️","Siasatan Dalaman","Pegawai Integriti minta lihat rekod kerja anda hari ini.","Tunjuk buku log kemas",[-20,0,2],"Mohon tangguh",[-5,-20,0]],
+kuih:["🍬","Kuih Raya Kak Zah","Kak Zah bawa kuih raya untuk satu jabatan. Semua tersenyum.","Terima & kongsi",[25,15,0],"Tolak sopan",[0,5,1]]});

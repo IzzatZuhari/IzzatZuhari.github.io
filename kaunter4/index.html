@@ -35,12 +35,14 @@ body{font-family:system-ui,sans-serif;background:var(--b);color:#fff;height:100d
 #ov button.m{width:100%;max-width:320px;background:#fff2;color:#fff;box-shadow:none;border:2px solid #fff4;text-align:left;padding:10px 14px;font-size:15px}#ov button.m.on{background:#ffd23f33;border-color:var(--y)}
 #ov small{display:block;font-weight:400;font-size:12px;opacity:.8}.row{display:flex;gap:6px}.sub{opacity:.8}
 .lbl{text-align:left;padding-left:22px;line-height:1.9}.lbl span{float:right;color:var(--y);font-weight:800;margin-left:12px}.al{display:grid;gap:6px;text-align:left;font-size:13px;width:100%;max-width:320px}.al div{background:#fff2;padding:8px;border-radius:10px}.al .lk{opacity:.4}
-.on2{outline:2px solid var(--y)}</style></head><body><div id="app">
+.on2{outline:2px solid var(--y)}.st{position:relative}.pop{position:absolute;left:50%;top:-4px;font-size:16px;animation:pp .9s forwards;pointer-events:none;text-shadow:0 1px 3px #000}.pop.up{color:#7cfc9a}.pop.dn{color:#ff6b6b}@keyframes pp{to{transform:translateY(-36px);opacity:0}}
+#splash{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#0b1f4b;transition:opacity .4s}#splash.gone{opacity:0;pointer-events:none}.sm{width:96px;height:96px;border-radius:22px;background:#ffd23f;color:#0b1f4b;font:900 46px monospace;display:flex;align-items:center;justify-content:center}.sb{width:140px;height:3px;background:#fff3;overflow:hidden}.sb span{display:block;width:40%;height:100%;background:#ffd23f;animation:sr 1s infinite}@keyframes sr{from{transform:translateX(-100%)}to{transform:translateX(350%)}}
+</style></head><body><div id="app">
 <div id="bg"></div><div id="toast"></div>
 <div id="top"><span>🏛️ KAUNTER 4 · <span id="dy"></span></span><span id="led">042</span><span id="clk"></span></div>
 <div id="stats"><div class="st" id="se">⚡ Tenaga<div class="bar"><i id="be"></i></div></div><div class="st" id="sp">😡 Kesabaran<div class="bar"><i id="bp"></i></div></div><div class="st" id="sk">📊 KPI <b id="kt"></b><div class="bar"><i id="bk"></i></div></div></div>
 <div id="timer"></div>
 <div id="stage"><div id="card"><div class="lb" id="la"></div><div class="lb" id="lb"></div><div id="ico"></div><div id="ct"></div><div id="tx"></div></div></div>
 <div id="btns"><button id="ba"></button><button id="bb"></button></div>
-<div id="ov"></div></div>
+<div id="ov"></div></div><div id="splash"><div class="sm">K4</div><b>Kaunter 4</b><div class="sb"><span></span></div></div>
 <script src="cards.js"></script><script src="game.js"></script></body></html>

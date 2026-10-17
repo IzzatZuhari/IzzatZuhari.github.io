@@ -28,3 +28,16 @@ const CARDS=[
 const SP={datuk:["👔","Datuk Hamdan Datang","'Mana mak cik tadi? Dia mengadu pasal anda.' Datuk merenung tajam.","Minta maaf, mengaku silap",[-15,10,0],"Pertahankan SOP",[-5,-15,2]]};
 const MODS=[["Hari Biasa","Tiada apa-apa. Setakat ini.",1,1],["Hari Gaji","Semua orang datang serentak!",1.3,1],["Hujan Lebat","Pelanggan basah & moody.",1.2,1.1],["Akhir Bulan","Semua nak renew sebelum tamat!",1.2,1.2],["Jumaat","Ramai nak balik awal solat Jumaat.",1,.9],["Cuti Sekolah","Budak lari-lari merata.",1.1,1.2]];
 const END={energy:["🤕","BURNOUT!","Anda pengsan di kaunter. Kak Sal tolong dukung ke klinik. Dapat MC 2 hari."],patience:["📹","VIRAL TIKTOK!","Video muka ketat anda tular: 'Gaji guna duit cukai kami tapi servis lambat!' Anda digantung kerja."],kpi:["📩","SURAT TUNJUK SEBAB","Jam 5.00 petang, sasaran tak tercapai. Surat tunjuk sebab menanti di meja."],sprm:["🚔","SPRM TERBAIK!","Sampul tadi rupanya perangkap. Anda ditahan reban di depan 200 orang. Tular juga."]};
+CARDS.push(
+["🚗","Salah Kaunter","Saya nak renew lesen kereta. Ini JPJ kan?","Tunjuk arah JPJ",[-3,5,0],"Tolong semak juga",[-20,15,1]],
+["🔌","Bekalan Terputus","Lampu mati. Komputer padam. Orang ramai bising.","Guna buku log",[-20,10,1],"Tutup, tunggu TNB",[15,-30,0]],
+["💬","Group WhatsApp","Bos hantar 47 mesej 'Mohon perhatian'. Tiada siapa balas.","Reply 'Noted tuan 👍'",[-5,5,0],"Mute group",[10,-5,0]],
+["📸","Gambar Newsletter","Pegawai Penerangan nak gambar anda 'sedang melayan rakyat'.","Pose senyum",[-10,10,1],"Elak kamera",[5,-10,0]],
+["📉","Excel Hilang","Laporan harian lupa save. Komputer restart sendiri.","Taip semula",[-25,0,1],"Tipu sikit data",[-5,5,2,null,"datuk"]],
+["🧑‍🎓","Pelajar Praktikal","'Kak, boleh saya cuba cop?'","Bagi cuba",[10,-15,1],"Suruh fotostat",[5,5,0]],
+["🧳","Pelancong Sesat","'Excuse me, where is the... passport office?'","Cuba cakap Inggeris",[-10,10,1],"Tunjuk poster",[0,-5,0]],
+["🧋","Teh Ais Ikat Tepi","Pelanggan hadiahkan teh ais sebab 'servis baik'.","Terima (bukan rasuah)",[15,5,0],"Tolak sopan",[-5,10,0]],
+["🔍","Audit Dalaman","Juruaudit nak tengok buku log sejak 2019.","Cari fail",[-25,0,1],"'Fail kena tikus, tuan'",[-5,-5,0,null,"datuk"]],
+["🙋","Tumpang Tanya","Tandas kat mana? Sambil tu status permohonan 2021 macam mana?","Jawab semua",[-15,15,1],"Tunjuk tandas je",[-3,-10,0]],
+["🤒","Kak Ani MC","Kerja Kak Ani diserahkan pada anda.","Terima",[-25,10,2],"Bagi balik pada bos",[-5,-15,1]],
+["🧮","Cukai Tanah","Pak Long bawa resit cukai tanah tahun 1987, tulisan tangan.","Layan penuh sabar",[-20,20,1],"Minta resit baharu",[-5,-20,0]]);

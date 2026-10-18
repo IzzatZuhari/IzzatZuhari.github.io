@@ -55,15 +55,18 @@ body{font-family:'Courier New',ui-monospace,monospace;font-weight:700;background
 #dayb{height:3px;background:#2ec4b6;width:0;z-index:2}#tickw{overflow:hidden;white-space:nowrap;background:#000a;font-size:10px;color:#ffd23f;z-index:1;padding:2px 0}#tick{display:inline-block;padding-left:100%;animation:mq 60s linear infinite}@keyframes mq{to{transform:translateX(-100%)}}
 #own{margin-top:6px;font-size:16px;letter-spacing:2px}
 .lbl{text-align:left;padding-left:24px;line-height:1.9;width:100%;max-width:320px}.lbl span{float:right;color:var(--y);font-weight:800;margin-left:12px}
+#btns{padding-bottom:calc(8px + env(safe-area-inset-bottom))}#btns #cl{position:static;flex:0 0 54px;font-size:22px;background:#333;border:3px solid #fff5;box-shadow:0 5px 0 #111;padding:4px;color:#fff;margin:0}
+#coach{display:none;margin:0 8px 6px;z-index:5;background:#ffd23f;color:#0b1f4b;border:3px solid #111;box-shadow:3px 3px 0 #000;padding:6px 8px;font-size:12px}
+.ph.zoom{position:fixed;left:50%;top:26%;width:220px;height:260px;margin:0;z-index:40;transform:translateX(-50%);box-shadow:0 0 0 100vmax #000b}#pf div.hl{background:#fff176}#pf .sp{border-top:1px dashed #888;padding-top:3px;margin-top:4px}
 </style></head><body><div id="app">
 <div id="bg"></div><div id="toast"></div>
 <div id="top"><span>🏛️ JPUAM · KAUNTER 4 · <span id="dy"></span></span><span id="led">042</span><span id="clk"></span></div>
 <div id="stats"><div class="st" id="se">⚡ Tenaga<div class="bar"><i id="be"></i></div></div><div class="st" id="sp">😡 Kesabaran<div class="bar"><i id="bp"></i></div></div><div class="st" id="sk">📊 KPI <b id="kt"></b><div class="bar"><i id="bk"></i></div></div></div>
 <div id="dayb"></div><div id="tickw"><span id="tick"></span></div><div id="timer"></div>
-<div id="booth"><div id="crt"><div id="crtx"></div></div><svg id="cup" viewBox="0 0 10 10" shape-rendering="crispEdges"><rect x="3" y="0" width="1" height="2" fill="#fff6"/><rect x="6" y="1" width="1" height="2" fill="#fff6"/><rect x="1" y="4" width="7" height="1" fill="#e8c9a0"/><rect x="2" y="5" width="5" height="4" fill="#b5651d"/><rect x="2" y="9" width="5" height="1" fill="#8a4b12"/><rect x="7" y="5" width="2" height="2" fill="#b5651d"/></svg><button id="cl">🔒 Tutup</button><button id="ph">📞</button><div id="say"></div><div id="av"></div></div>
-<div id="desk"><div id="rules"><h4>📋 PERATURAN HARI INI</h4><ol id="rl"></ol><div id="own"></div></div><div id="paper"><div id="pt"></div><div id="pf"></div><div id="ink"></div></div></div><div id="qe"><div id="qh">⚠ PERISTIWA PANTAS ⚠</div><div id="qb"><div id="qi"></div><div id="qt"></div><div id="qx"></div></div><div id="qq"><button>1</button><button>2</button><button>3</button></div><button id="qa"></button><button id="qc"></button></div>
+<div id="booth"><div id="crt"><div id="crtx"></div></div><svg id="cup" viewBox="0 0 10 10" shape-rendering="crispEdges"><rect x="3" y="0" width="1" height="2" fill="#fff6"/><rect x="6" y="1" width="1" height="2" fill="#fff6"/><rect x="1" y="4" width="7" height="1" fill="#e8c9a0"/><rect x="2" y="5" width="5" height="4" fill="#b5651d"/><rect x="2" y="9" width="5" height="1" fill="#8a4b12"/><rect x="7" y="5" width="2" height="2" fill="#b5651d"/></svg><button id="ph">📞</button><div id="say"></div><div id="av"></div></div>
+<div id="coach"></div><div id="desk"><div id="rules"><h4>📋 PERATURAN HARI INI</h4><ol id="rl"></ol><div id="own"></div></div><div id="paper"><div id="pt"></div><div id="pf"></div><div id="ink"></div></div></div><div id="qe"><div id="qh">⚠ PERISTIWA PANTAS ⚠</div><div id="qb"><div id="qi"></div><div id="qt"></div><div id="qx"></div></div><div id="qq"><button>1</button><button>2</button><button>3</button></div><button id="qa"></button><button id="qc"></button></div>
 
-<div id="btns"><button id="ba"></button><button id="bb"></button></div>
+<div id="btns"><button id="ba"></button><button id="cl">🔒</button><button id="bb"></button></div>
 <div id="ov"></div></div>
 <div id="splash"><div class="sm">K4</div><b>Kaunter 4</b><div class="sb"><span></span></div></div>
 <script src="cards.js"></script><script src="game.js"></script></body></html>
